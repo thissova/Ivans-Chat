@@ -1,0 +1,9 @@
+# Ignore artifacts
+build
+dist
+node_modules
+coverage
+
+# Ignore system files
+.DS_Store
+package-lock.json
