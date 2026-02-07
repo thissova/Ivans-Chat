@@ -1,10 +1,10 @@
 import './App.css';
-import Background from './components/Background/Background';
+import Layout from './layout';
 
 function App() {
   return (
     <div className="App">
-      <Background />
+      <Layout />
     </div>
   );
 }

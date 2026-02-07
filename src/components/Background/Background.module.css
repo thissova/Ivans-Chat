@@ -1,7 +1,7 @@
 .purpleBlur,
 .blueBlur {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
   border-radius: 9999px;
   width: 500px;
   height: 500px;
@@ -13,8 +13,8 @@
   background: rgba(147, 51, 234, 0.2);
 }
 .blueBlur {
-  bottom: -250px;
-  right: -250px;
+  bottom: -20px;
+  right: -200px;
   filter: blur(100px);
-  background: rgba(8, 145, 178, 0.1);
+  background: rgba(8, 145, 178, 0.2);
 }

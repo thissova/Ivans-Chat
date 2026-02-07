@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+}
+.link {
+  cursor: pointer;
+}
+.name {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.4);
+}
