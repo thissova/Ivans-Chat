@@ -8,8 +8,8 @@ function Sidebar() {
       <NavLink to={'/about'}>
         <LogoSvg className={styles.logo} />
       </NavLink>
+      <SidebarLink image={''} name={'News'} route={'news'} />
       <SidebarLink image={''} name={'Chats'} route={'chats'} />
-      <SidebarLink image={''} name={'Friends'} route={'friends'} />
       <SidebarLink image={''} name={'Settings'} route={'settings'} />
       <div
         style={{
