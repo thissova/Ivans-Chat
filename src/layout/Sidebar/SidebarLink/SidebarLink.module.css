@@ -1,10 +1,19 @@
 a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
   text-decoration: none;
 }
 .link {
   cursor: pointer;
 }
 .name {
-  font-size: 30px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.icon {
+  width: 40px;
+  height: auto;
   color: rgba(255, 255, 255, 0.4);
 }

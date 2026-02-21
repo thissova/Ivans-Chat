@@ -1,5 +1,6 @@
 .container {
-  width: 150px;
+  width: fit-content;
+  min-width: 120px;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -7,4 +8,10 @@
   background-color: rgba(15, 23, 42, 0.8);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   align-items: center;
+}
+.logo {
+  margin-top: 8px;
+  color: rgb(103 232 249); /* TODO: redesign */
+  width: 50px;
+  height: 50px;
 }

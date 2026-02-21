@@ -1,12 +1,12 @@
 import { NavLink } from 'react-router-dom';
+import { ReactComponent as LogoSvg } from './../../assets/logo.svg';
 import styles from './Sidebar.module.css';
 import SidebarLink from './SidebarLink/SidebarLink';
-
 function Sidebar() {
   return (
     <nav className={styles.container}>
-      <NavLink to={'/about'} className={styles.logo}>
-        <img src="./../../assets/logo.svg" alt="logo" />
+      <NavLink to={'/about'}>
+        <LogoSvg className={styles.logo} />
       </NavLink>
       <SidebarLink image={''} name={'Chats'} route={'chats'} />
       <SidebarLink image={''} name={'Friends'} route={'friends'} />

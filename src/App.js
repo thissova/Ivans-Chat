@@ -2,11 +2,7 @@ import './App.css';
 import Layout from './layout';
 
 function App() {
-  return (
-    <div className="App">
-      <Layout />
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;
