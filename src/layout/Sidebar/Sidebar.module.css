@@ -8,6 +8,7 @@
   background-color: rgba(15, 23, 42, 0.8);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
   align-items: center;
+  position: fixed;
 }
 .logo {
   margin-top: 8px;

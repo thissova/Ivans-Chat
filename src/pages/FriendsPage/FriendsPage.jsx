@@ -1,5 +1,5 @@
-function ChatsPage() {
+function FriendsPage() {
   return <div>ChatsPage</div>;
 }
 
-export default ChatsPage;
+export default FriendsPage;

@@ -1,15 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
+import AboutPage from '../../pages/AboutPage/AboutPage';
+import FriendsPage from '../../pages/FriendsPage/FriendsPage';
+import SettingsPage from '../../pages/SettingsPage/SettingsPage';
 
 const Main = () => {
   return (
-    <main>
-      <Routes>
-        <Route path="/about" element={''} />
-        <Route path="/chats" element={''} />
-        <Route path="/friends" element={''} />
-        <Route path="/settings" element={''} />
-      </Routes>
-    </main>
+    <Routes>
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/chats" element={<FriendsPage />} />
+      <Route path="/friends" element={<FriendsPage />} />
+      <Route path="/settings" element={<SettingsPage />} />
+    </Routes>
   );
 };
 
