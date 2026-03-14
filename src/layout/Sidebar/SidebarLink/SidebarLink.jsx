@@ -6,18 +6,24 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 import styles from './SidebarLink.module.css';
+import { motion } from 'motion/react';
+
+const ICONS_MAP = {
+  chats: faMessage,
+  friends: faUserGroup,
+  settings: faGear,
+};
 
 function SidebarLink({ route, name }) {
-  const getIcon = () => {
-    if (name.toLowerCase() === 'chats') return faMessage;
-    else if (name.toLowerCase() === 'friends') return faUserGroup;
-    else if (name.toLowerCase() === 'settings') return faGear;
-  };
+  const icon = ICONS_MAP[name.toLowerCase()];
+
   return (
-    <NavLink className={styles.link} to={`/${route}`}>
-      <FontAwesomeIcon icon={getIcon()} className={styles.icon} />
-      <p className={styles.name}>{name}</p>
-    </NavLink>
+    <motion.div className={styles.container} whileHover={{ scale: 1.1 }}>
+      <NavLink className={styles.link} to={`/${route}`}>
+        <FontAwesomeIcon icon={icon} className={styles.icon} />
+        <p className={styles.name}>{name}</p>
+      </NavLink>
+    </motion.div>
   );
 }
 

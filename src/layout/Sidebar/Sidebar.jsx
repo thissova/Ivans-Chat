@@ -2,15 +2,18 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as LogoSvg } from './../../assets/logo.svg';
 import styles from './Sidebar.module.css';
 import SidebarLink from './SidebarLink/SidebarLink';
+import { motion } from 'motion/react';
 function Sidebar() {
   return (
     <nav className={styles.container}>
-      <NavLink to={'/about'}>
-        <LogoSvg className={styles.logo} />
-      </NavLink>
-      <SidebarLink image={''} name={'Chats'} route={'chats'} />
-      <SidebarLink image={''} name={'Friends'} route={'friends'} />
-      <SidebarLink image={''} name={'Settings'} route={'settings'} />
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <NavLink to={'/about'}>
+          <LogoSvg className={styles.logo} />
+        </NavLink>
+      </motion.div>
+      <SidebarLink name={'Chats'} route={'chats'} />
+      <SidebarLink name={'Friends'} route={'friends'} />
+      <SidebarLink name={'Settings'} route={'settings'} />
       <div
         style={{
           width: '100px',

@@ -2,6 +2,7 @@
 body {
   background: linear-gradient(135deg, #0c1220 0%, #0f172a 50%, #162032 100%);
   width: 100%;
+  height: 100vh;
 }
 * {
   padding: 0;

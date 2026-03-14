@@ -17,3 +17,8 @@ a {
   height: auto;
   color: rgba(255, 255, 255, 0.4);
 }
+.container:hover .icon,
+.container:hover .name {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s ease-in;
+}
